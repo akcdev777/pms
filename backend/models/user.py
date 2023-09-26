@@ -5,12 +5,13 @@
 ## Description: This class is used to create a user object
 
 class User:
-    def __init__(self, username, password, first_name, last_name, email):
+    def __init__(self, username, password, first_name, last_name, email, role):
         self.username = username
         self.password = password
         self.fname = first_name
         self.lname = last_name
         self.email = email
+        self.role = role # user privileges (admin=1, user=0)
 
     # Add other methods as needed
 
