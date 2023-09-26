@@ -5,7 +5,8 @@
 ## Description: This class is used to create a user object
 
 class User:
-    def __init__(self, username, password, first_name, last_name, email, role):
+    def __init__(self,id, username, password, first_name, last_name, email, role):
+        self.id = id
         self.username = username
         self.password = password
         self.fname = first_name
@@ -21,6 +22,9 @@ class User:
     def __repr__(self):
         return f"{self.username} {self.password} {self.fname} {self.email}"
 
+    def get_id(self):
+        return self.id
+    
     def get_fname(self):
         return self.fname
 
